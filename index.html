@@ -15,25 +15,15 @@
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         .font-poppins {
             font-family: "Poppins", sans-serif;
         }
     </style>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        ' bike-primary': '#E76F51',
-                        ' bike-primary-bg': '#E76F51',
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="font-poppins">
@@ -160,7 +150,21 @@
         </div>
     </header>
     <!-- main section  -->
-    <main></main>
+    <main>
+        <section>
+            <div class="container mx-auto mt-40">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="font-semibold text-5xl">Fetured Bikes In This Year</h1>
+                    <p class="font-semibold text-sm text-[#E76F51] mt-3">Best bike collection</p>
+                </div>
+                <div class="flex  md:justify-between flex-col lg:flex-row justify-between mt-11">
+                    <img src="others/feature-bike.png" alt="">
+                    <img src="others/feature-bike.png" alt="">
+                    <img src="others/feature-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- footer section  -->
     <footer></footer>
 </body>
