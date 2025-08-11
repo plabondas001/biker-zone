@@ -16,6 +16,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
         .font-poppins {
@@ -150,10 +161,10 @@
         </div>
     </header>
     <!-- main section  -->
-    <main>
+    <main class="md:container mx-auto">
         <section>
-            <div class="container mx-auto mt-40">
-                <div class="flex flex-col justify-center items-center">
+            <div class="mt-40">
+                <div class="text-center">
                     <h1 class="font-semibold text-5xl">Fetured Bikes In This Year</h1>
                     <p class="font-semibold text-sm text-[#E76F51] mt-3">Best bike collection</p>
                 </div>
@@ -161,6 +172,58 @@
                     <img src="others/feature-bike.png" alt="">
                     <img src="others/feature-bike.png" alt="">
                     <img src="others/feature-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- latest bike section -->
+        <section class="my-28">
+            <h1 class="font-semibold text-5xl text-[#0A0826] text-center mb-10">Latest News</h1>
+            <!-- card -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="card bg-base-100 gap-12 shadow-sm">
+                    <figure>
+                        <img src="others/latest1.png" alt="Bike" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-semibold text-3xl text-[#18191F]">Ducati XDIAVEL S-73</h2>
+                        <p class="text-lg text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Lacus, fermentum amet faucibus sed id nisi lectus at.
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-base-100 gap-12 shadow-sm">
+                    <figure>
+                        <img src="others/latest2.png" alt="Bike" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-semibold text-3xl text-[#18191F]">Ducati XDIAVEL S-73</h2>
+                        <p class="text-lg text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Lacus, fermentum amet faucibus sed id nisi lectus at.
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-base-100 gap-12 shadow-sm">
+                    <figure>
+                        <img src="others/latest3.png" alt="Bike" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-semibold text-3xl text-[#18191F]">Ducati XDIAVEL S-73</h2>
+                        <p class="text-lg text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Lacus, fermentum amet faucibus sed id nisi lectus at.
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
